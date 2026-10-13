@@ -710,36 +710,36 @@ namespace Bai._308523_inc {
   model PrAPSSum is ReadonlyRegister<seconds2>;
 
   /** PrVortexFlowSensorValue_DK */
-  // @inherit(r)
-  // @ext(0xf4, 0)
-  // model PrVortexFlowSensorValue {
-  //   /** Predictive Maintenance data */
-  //   value: SIN;
-  // }
+  @inherit(r)
+  @ext(0xf4, 0)
+  model PrVortexFlowSensorValue {
+    /** Predictive Maintenance data */
+    value: SIN;
+  }
 
   /** PrEnergySumCH1_DK: Predictive Maintenance data */
-  // @ext(0xf5, 0)
-  // model PrEnergySumHc1 is InstallRegister<ULG>;
+  @ext(0xf5, 0)
+  model PrEnergySumHc1 is InstallRegister<ULG>;
 
   /** PrEnergyCountCH1_DK: Predictive Maintenance data */
-  // @ext(0xf6, 0)
-  // model PrEnergyCountHc1 is InstallRegister<ULG>;
+  @ext(0xf6, 0)
+  model PrEnergyCountHc1 is InstallRegister<ULG>;
 
   /** PrEnergySumCH2_DK: Predictive Maintenance data */
-  // @ext(0xf7, 0)
-  // model PrEnergySumHc2 is InstallRegister<ULG>;
+  @ext(0xf7, 0)
+  model PrEnergySumHc2 is InstallRegister<ULG>;
 
   /** PrEnergyCountCH2_DK: Predictive Maintenance data */
-  // @ext(0xf8, 0)
-  // model PrEnergyCountHc2 is InstallRegister<ULG>;
+  @ext(0xf8, 0)
+  model PrEnergyCountHc2 is InstallRegister<ULG>;
 
   /** PrEnergySumCH3_DK: Predictive Maintenance data */
-  // @ext(0xf9, 0)
-  // model PrEnergySumHc3 is InstallRegister<ULG>;
+  @ext(0xf9, 0)
+  model PrEnergySumHc3 is InstallRegister<ULG>;
 
   /** PrEnergyCountCH3_DK: Predictive Maintenance data */
-  // @ext(0xfa, 0)
-  // model PrEnergyCountHc3 is InstallRegister<ULG>;
+  @ext(0xfa, 0)
+  model PrEnergyCountHc3 is InstallRegister<ULG>;
 
   enum Values_PumpPowerDesired {
     auto: 0,
